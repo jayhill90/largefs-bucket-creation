@@ -6,6 +6,7 @@ Description:  A plugin designed for creating an S3 bucket for use with WP Engine
 Version:      0.1.0
 Author:       Jay Hill
 Author URI:   https://github.com/jayhill90/
+License:
 */
 
 require 'vendor/autoload.php';
@@ -84,7 +85,7 @@ function largefs_options() {
   Access Key:
   <input type="text" name="s3_access_key" value="" /><br/>
   Secret Key:
-  <input type="text" name="s3_secret_key" value="" /><br />
+  <input type="password" name="s3_secret_key" value="" /><br />
   <?php submit_button( 'Make Bucket' ); ?>
   </form>
   <?php do_action( 'largefs_config' ); ?>
